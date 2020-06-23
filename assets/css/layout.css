@@ -1,0 +1,115 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-dark {
+    background-color: #0b231e !important;
+}
+
+.bg-dark-green {
+    background-color: #14322B;
+}
+
+a,
+a:hover {
+    color: #D4C19C;
+}
+
+nav .logo {
+    height: 30px;
+}
+
+#back-to-top {
+    bottom: 15px;
+    right: -50px;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.show {
+    right: 15px !important
+}
+
+#back-to-top>div {
+    background-color: #D4C19C;
+    color: #333;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+footer {
+    background-color: #12322b;
+}
+
+footer .pleca {
+    background-image: url(https://framework-gb.cdn.gob.mx/landing/img/pleca.svg);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    height: 50px;
+}
+
+nav a,
+footer a,
+nav a:hover,
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer .logo {
+    max-width: 70%;
+}
+
+footer .follow img {
+    height: 20px;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.nav-desktop a {
+    padding: 13px 15px;
+    transition: all .3s;
+}
+
+.nav-desktop a:hover {
+    background-color: rgba(255, 255, 255, .15);
+    color: #D4C19C;
+    text-decoration: none;
+}
+
+.z-depth-0 {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
+}
+
+.card {
+    border-radius: .5rem;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 15px
+    }
+    nav a,
+    footer a {
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

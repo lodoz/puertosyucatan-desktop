@@ -1,0 +1,24 @@
+.accordion .fleet .card-body:nth-child(odd),
+#arribos .card-body:nth-child(odd) {
+    background-color: #F8F8F8;
+}
+
+.fleet {
+    line-height: 1.5rem;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .nav-desktop a {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-desktop a {
+        font-size: 1rem;
+    }
+}
