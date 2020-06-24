@@ -136,7 +136,7 @@ function update(){
             var dd = today.getDate();
             var mm = today.getMonth()+1;
             var yyyy = today.getFullYear();
-            var factualizada = dd + ' de ' + meses[Number(mm)-1] + yyyy;
+            var factualizada = dd + ' de ' + meses[Number(mm)-1] + ' ' + yyyy;
             $('#fechaActualizacion').text(factualizada);
         })
 
