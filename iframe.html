@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Sitio oficial de la Administración Portuaria Integral (API) Progreso, Yucatan. El Puerto de Progreso esta ubicado en Yucatán, al sureste de México." />
+		<meta name="author" content="gestudios" />
+
+		<link rel="canonical" href="https://www.puertosyucatan.com/pr/programacionbuques.htm" />
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/layout.min.css">
+		<link rel="stylesheet" href="assets/css/home.min.css">
+
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Programación de Buques | Puertos Yucatán">
+		<meta property="og:url" content="https://www.puertosyucatan.com/pr/programacionbuques.htm">
+    <meta property="og:site_name" content="Programación de Buques | Puertos Yucatán">
+    <meta property="og:description" content="Sitio oficial de la Administración Portuaria Integral (API) Progreso, Yucatan. El Puerto de Progreso esta ubicado en Yucatán, al sureste de México.">
+    <meta property="og:image" content="https://www.puertosyucatan.com/pr/assets/img/share-1024-683.png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="683">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Programación de Buques | Puertos Yucatán">
+    <meta name="twitter:description" content="Sitio oficial de la Administración Portuaria Integral (API) Progreso, Yucatan. El Puerto de Progreso esta ubicado en Yucatán, al sureste de México.">
+    <meta name="twitter:image" content="https://www.puertosyucatan.com/pr/assets/img/share-1024-683.png">
+
+		<title>Programación de Buques | Puertos Yucatán</title>
+
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="assets/img/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+  	</head>
+  	<body>
+		<nav id="top"></nav>
+		<div class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<h2 class="mb-4">En Puerto; Progreso, Yucalpeten, Coloradas</h2>
+					</div>
+					<div class="col-12 col-md-6 text-md-right">
+						<a href="#puerto" class="btn btn-outline-dark mr-md-3 btn-sm">EN PUERTO</a>
+						<a href="#arribos" class="btn btn-outline-dark btn-sm">ARRIBOS</a>
+					</div>
+				</div>
+
+				<div id="puerto" class="row pt-5 pt-md-4">
+					<div class="col">
+						<div class="accordion mb-4" id="puertoAccordeon">
+							<div class="card border-0">
+								<div class="card-header bg-white px-2" id="headingPuerto">
+									<h3 class="mb-0">
+										<button class="btn btn-link btn-block text-reset text-left font-weight-bold d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapsePuerto" aria-expanded="true" aria-controls="collapsePuerto">
+											<span>Embarcaciones en Puerto <a id="countPuerto"></a></span>
+											<svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>
+											</button>
+										</button>
+									</h3>
+								</div>
+
+								<div id="collapsePuerto" class="fleet collapse show" aria-labelledby="headingPuerto" data-parent="#puertoAccordeon">
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion mb-4" id="remolcadoresAccordeon">
+							<div class="card border-0">
+								<div class="card-header bg-white px-2" id="headingRemolcadores">
+									<h3 class="mb-0">
+										<button class="btn btn-link btn-block text-reset text-left font-weight-bold d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseRemolcadores" aria-expanded="false" aria-controls="collapseRemolcadores">
+										<span>Remolcadores <a id="countRemolcadores"></a></span>
+										<svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>
+										</button>
+									</h3>
+								</div>
+
+								<div id="collapseRemolcadores" class="fleet collapse" aria-labelledby="headingRemolcadores" data-parent="#remolcadoresAccordeon">
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion" id="estadiaAccordeon">
+							<div class="card border-0">
+								<div class="card-header bg-white px-2" id="headingEstadia">
+									<h3 class="mb-0">
+										<button class="btn btn-link btn-block text-reset text-left font-weight-bold d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseEstadia" aria-expanded="false" aria-controls="collapseEstadia">
+										<span>Estadía prolongada <a id="countEstadia"></a></span>
+										<svg class="bi bi-chevron-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>
+										</button>
+									</h3>
+								</div>
+
+								<div id="collapseEstadia" class="fleet collapse" aria-labelledby="headingEstadia" data-parent="#estadiaAccordeon">
+							  </div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div id="arribos" class="row pt-5 mb-4">
+				</div>
+
+				<div class="row text-center">
+					<div class="col-12 text-md-right mb-5">
+						<small>Fuente: Sistema Informático SPARP<br>
+						Última actualización: <a id="fechaActualizacion">14 de Junio de 2017</a></small>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a href="#top" id="back-to-top" class="position-fixed">
+			<div class="d-flex justify-content-center align-items-center">
+				<svg class="bi bi-arrow-up-short" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 5.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8 5.707 5.354 8.354a.5.5 0 1 1-.708-.708l3-3z"/></svg>
+			</div>
+						</a>
+
+	  	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="assets/js/main.js"></script>
+
+	</body>
+</html>
